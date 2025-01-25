@@ -1,19 +1,18 @@
 
 const themeSelector = document.querySelector('select')// replace with code to select dropdown element out of the HTML (Hint: document.querySelector)
+const logo_img = document.querySelector('footer img') 
 function changeTheme() {
 // check to see what the current value of our select is.
 // The current value is conveniently found in themeSelector.value!
 if (themeSelector.value === "dark"){
     document.body.classList.add('dark');
     
-    const logo_img = document.querySelector('footer img') 
     logo_img.src ="byui-logo_white.png";
 }
 
 else {
     document.body.classList.remove('dark')
     
-    const logo_img = document.querySelector('footer img') 
     logo_img.src ="byui-logo_blue.png";
 }
 // if the value is dark then:
