@@ -1,0 +1,122 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+:root {
+--primary-color: #52489c;
+--secondary-color: #59c3c3;
+--accent-color: #f45b69;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: Mooli, sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-content: center;
+  }
+
+  a:link, a:visited {
+    /* color: var(--accent-color); */
+    background-color: var(--primary-color);
+    text-decoration: underline;
+  }
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    box-shadow: 5px 5px 10px #484943;
+    border: 5px solid white;
+}
+
+button{
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 40px;
+    border: none;
+}
+
+main{
+    background-color: lightgray;
+}
+
+h1{
+    font-family: var(--secondary-font);
+    font-size: 85px;
+    margin: 20px;
+}
+
+h2{
+    padding-top:20px;
+    font-size: 40px;
+}
+
+header{
+    color: var(--text-light);
+    justify-items: center;
+}
+
+nav {
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: underline;
+    color: var(--text-light);
+    padding: 5px;
+    display: block;
+    font-size: 25px;
+}
+
+section{
+    display: grid;
+    padding-bottom: 30px;
+}
+
+footer p{
+    padding-left: 10px;
+    color: var(--text-light);
+    text-align: left;
+}
+
+@media (min-width: 700px) {
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    a{
+        display: flex;
+    }
+    nav{
+        max-width: 1300px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    section{
+        max-width: 1400px;
+        justify-self: center;
+    }
+    button{
+        display: none;
+    }
+}

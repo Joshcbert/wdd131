@@ -27,6 +27,7 @@ h2{
     letter-spacing: .175em;
     font-size: 15px;
     border-bottom: 1px solid lightgrey;
+    font-weight: 300;
 }
 
 p:first-child{
@@ -52,6 +53,7 @@ img{
 
 li{
     margin-top: 20px;
+    line-height: 1.5;
 }
 
 .dark{
