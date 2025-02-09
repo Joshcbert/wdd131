@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-family: var(--secondary-font);
+  }
+
+:root {
+--primary-color: #93a3b1;
+--accent-color: #93a3b1;
+--text-dark: #214e34;
+--text-light: #7B2D26;
+--primary-font: "Permanent Marker", Arial, Helvetica;
+--secondary-font: Roboto, sans-serif;
+}
+
+h1{
+    font-family: var(--primary-font);
+    color: #7B2D26;
+    font-size: 50px;
+}
+
+article h2{
+    font-family: var(--primary-font);
+    color: var(--text-dark)
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    list-style-type: none;
+    justify-content: end;
+    justify-items: end;
+    border-bottom: var(--primary-color) solid 2px;
+    border-top: var(--primary-color) solid 2px;
+    padding: 20px;
+    padding-right: 100px;
+    margin-bottom: 40px;
+}
+
+a{
+    color: var(--text-dark);
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--text-light);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 30px;
+}
+
+.posts{
+    grid-column: 1/2;
+    text-align: right;
+}
+
+.filters{
+    border: #93a3b1 solid 2px;
+    grid-column: 2/3;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    padding-right: 40px;
+    margin: 30px;
+}
+
+.ages, .date, .genre, .stars{
+    grid-column: 1/2;
+    padding-right: 15px;
+}
+
+.title, .description{
+    grid-column: 2/3;
+    text-align: left;
+    padding-left: 20px;
+    border-left: var(--accent-color) solid 2px;
+}
+
+
+article img{
+    grid-column: 2/3;
+    padding: 50px;
+    /* padding-bottom: 30px; */
+    /* align-self: center;
+    justify-self: center; */
+    grid-row: 2/5;
+    border-left: var(--accent-color) solid 2px;
+    margin-top: -20px;
+}
+
+.title, .date{
+    grid-row: 1/2;
+}
+
+.details{
+    grid-row: 2/3;
+    margin-top: -20px;
+}
+
+article p a{
+    font-size: 20px;
+}
+
+/* .ages{
+    grid-row: 2/3;
+}
+
+.genre{
+    grid-row: 3/4;
+}
+
+.stars{
+    grid-row: 4/5;
+} */
+
+.description{
+    grid-row: 5/6;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: -10px;
+    font-size: 20px;
+}
+
+.skiptocontent a{
+    position: absolute;
+    top: -500px;
+    justify-content: left;
+    background-color: #7B2D26;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.skiptocontent a:focus{
+    top: 10px;
+    left: 5px;
+}
