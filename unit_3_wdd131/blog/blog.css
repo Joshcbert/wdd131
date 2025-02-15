@@ -9,23 +9,25 @@ html, body {
   }
 
 :root {
---primary-color: #93a3b1;
---accent-color: #93a3b1;
---text-dark: #214e34;
---text-light: #7B2D26;
+--primary-color: #70A288;
+--text-dark: #255C99;
+--text-secondary: #C03221;
 --primary-font: "Permanent Marker", Arial, Helvetica;
 --secondary-font: Roboto, sans-serif;
 }
 
 h1{
     font-family: var(--primary-font);
-    color: #7B2D26;
+    color: var(--text-secondary);
     font-size: 50px;
+    letter-spacing: 2px;
 }
 
 article h2{
     font-family: var(--primary-font);
-    color: var(--text-dark)
+    color: var(--text-dark);
+    letter-spacing: 1px;
+    font-size: 35px;
 }
 
 ul{
@@ -50,7 +52,7 @@ a{
 
 a:hover{
     text-decoration: underline;
-    color: var(--text-light);
+    color: var(--text-secondary);
 }
 
 main{
@@ -65,7 +67,7 @@ main{
 }
 
 .filters{
-    border: #93a3b1 solid 2px;
+    border: var(--primary-color) solid 2px;
     grid-column: 2/3;
 }
 
@@ -74,68 +76,60 @@ article{
     grid-template-columns: 1fr 2fr ;
     padding-right: 40px;
     margin: 30px;
+    margin-top: 70px;
 }
 
-.ages, .date, .genre, .stars{
-    grid-column: 1/2;
+.ages, .date, .genre, .stars, .date{
     padding-right: 15px;
+    margin-bottom: -15px;
+
 }
 
 .title, .description{
     grid-column: 2/3;
     text-align: left;
     padding-left: 20px;
-    border-left: var(--accent-color) solid 2px;
 }
 
 
-article img{
-    grid-column: 2/3;
-    padding: 50px;
-    /* padding-bottom: 30px; */
-    /* align-self: center;
-    justify-self: center; */
-    grid-row: 2/5;
-    border-left: var(--accent-color) solid 2px;
+.book_synopsis img{
     margin-top: -20px;
-}
-
-.title, .date{
-    grid-row: 1/2;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .details{
-    grid-row: 2/3;
+    grid-row: 1/2;
     margin-top: -20px;
+    border-right: var(--primary-color) solid 2px;
+    font-size: 20px;
 }
 
 article p a{
-    font-size: 20px;
+    font-size: 18px;
 }
 
-/* .ages{
-    grid-row: 2/3;
+.date {
+    font-size: 25px;
 }
 
-.genre{
-    grid-row: 3/4;
+.title{
+    margin-top: -12px;
 }
-
-.stars{
-    grid-row: 4/5;
-} */
 
 .description{
-    grid-row: 5/6;
     padding-top: 20px;
     padding-bottom: 10px;
     margin-top: -10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .skiptocontent a{
     position: absolute;
     top: -500px;
+    left: 0;
     justify-content: left;
     background-color: #7B2D26;
     color: aliceblue;
