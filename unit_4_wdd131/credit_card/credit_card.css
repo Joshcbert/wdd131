@@ -1,0 +1,106 @@
+
+main{
+    width: 500px;
+}
+
+#main_grid{
+    display: grid;
+    width: 500px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 20px 200px 20px 30px;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+#card_front{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 228px 100px;
+    grid-template-rows: 50px 50px 50px;
+    column-gap: 20px;
+    row-gap: 20px;
+    background-color: lightgray;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 10px;
+}
+
+p{
+    align-self: center;
+    justify-self: left;
+}
+
+.card-image{
+    align-self: center;
+    justify-self: right;
+}
+
+#card_number_container{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    
+}
+
+#card_holder_container{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#expiration_container{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px
+}
+
+#card_back {
+    border-radius: 10px;
+    display: grid; 
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: lightgray;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    z-index: -1;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+#exp-month{
+    grid-column: 1/2;
+}
+    
+#exp-year{
+    grid-column: 2/3;
+}
+    
+#expiration_container label{
+    grid-column: 1/3;
+}
+
+#cvc_container{
+    grid-column: 2/3;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+
+#mag_strip{
+    background-color: #151516;
+    margin-top: 25px;
+    height: 40px;
+    grid-column: 1/3;
+}
+
+#submit_button{
+    grid-row: 4/5;
+    grid-column: 3/4;
+    border: 2px black solid;
+    border-radius: 5px;
+}
+
+input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
