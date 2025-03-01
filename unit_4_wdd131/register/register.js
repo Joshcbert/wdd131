@@ -14,24 +14,24 @@ function participantTemplate(count) {
             <p>Participant ${count}</p>
             <div class="item">
               <label for="fname"> First Name<span>*</span></label>
-              <input id="fname${count}" type="text" name="fname" value="" required />
+              <input id="fname${count}" type="text" name="fname" value="" required >
             </div>
             <div class="item activities">
               <label for="activity">Activity #<span>*</span></label>
-              <input id="activity${count}" type="text" name="activity" />
+              <input id="activity${count}" type="text" name="activity" >
             </div>
             <div class="item">
               <label for="fee">Fee ($)<span>*</span></label>
-              <input id="fee${count}" type="number" name="fee" />
+              <input id="fee${count}" type="number" name="fee" >
             </div>
             <div class="item">
               <label for="date">Desired Date <span>*</span></label>
-              <input id="date${count}" type="date" name="date" />
+              <input id="date${count}" type="date" name="date" >
             </div>
             <div class="item">
               <p>Grade</p>
               <select>
-                <option selected value="" disabled selected></option>
+                <option selected value="" disabled>select</option>
                 <option value="1">1st</option>
                 <option value="2">2nd</option>
                 <option value="3">3rd</option>
