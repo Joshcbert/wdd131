@@ -80,6 +80,7 @@ header h1{
     border: black 1px solid;
     padding: 5px;
     white-space: nowrap;
+    margin-right: 2px;
 }
 
 .recipe-card{
@@ -91,10 +92,7 @@ header h1{
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.2s ease-in-out;
-}
-
-.recipe-info .title{
-    line-height: 0.1;
+    margin-top: 20px;
 }
 
 .recipe-card:hover {
