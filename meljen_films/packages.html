@@ -3,9 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Josh Seibert">
+    <meta name="description" content="Mock wedding videographer site for BYU I course WDD 131 - Displays packages and an inquiry form">
+    <title>MelJenn Films</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="meljen.js" type="module"></script>
 </head>
-<body>
-    
+<body id="packages_page">
+
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/meljen_films_logo_color.png" alt="MelJen Films Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a> 
+                <a href="packages.html">Packages</a>
+            </nav>
+        </header>
+
+        <main>
+            
+            <section id="packages" aria-labelledby="packages-heading">
+                <h1 id="packages-heading">Available Packages</h1>
+            </section>
+            <div class="package-card">
+                <h2>Additional Information</h2>
+                <div class="details-card">
+                    <div class="line-item">
+                        <span class="label">Deposit:</span>
+                        <span class="value">20% upon confirmation</span>
+                    </div>
+                    <div class="line-item">
+                        <span class="label">Delivery:</span>
+                        <span class="value">within 4 weeks of filming</span>
+                    </div>                      
+                    <div class="line-item">
+                        <span class="label">Additional Hours:</span>
+                        <span class="value">$130 per hour</span>
+                    </div>  
+                    <div class="line-item">
+                        <span class="label">Video Quality:</span>
+                        <span class="value">4K and HD resolution</span>
+                    </div> 
+                    <div class="line-item">
+                        <span class="label">All video will be delivered via USB</span>
+                    </div>
+                    <div class="line-item">
+                        <span class="label">Digital-use Release included for all videos</span>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <h1>Inquiries:</h1>
+            <form id="inquiriesForm">
+                <fieldset>
+                    <legend>Wedding Information</legend>
+                    <div class="columns">
+                        <div class="item">
+                            <label for="bride_name"
+                            >Bride<span>*</span></label>
+                            <input id="bride_name" type="text" name="bride_name" >
+                        </div>
+                        
+                        <div class="item">
+                            <label for="groom_name"
+                            >Groom<span>*</span></label>
+                            <input id="groom_name" type="text" name="groom_name" >
+                        </div>
+
+                        <div class="item">
+                            <label for="email">Email Address<span>*</span></label>
+                            <input id="email" type="email" name="email" >
+                        </div>
+
+                        <div class="item">
+                            <label for="phone">Phone<span>*</span></label>
+                            <input id="phone" type="tel" name="phone" required >
+                        </div>
+
+                        <div class="item">
+                            <label for="date">Wedding Date <span>*</span></label>
+                            <input id="date" type="date" name="date" required>
+                        </div>
+
+                        <div class="question">
+                            <label>Package:</label>
+                            <div class="question-answer">
+                                <div>
+                                    <input
+                                        type="radio"
+                                        value="Premium"
+                                        id="radio_1"
+                                        name="package"
+                                    >
+                                    <label for="radio_1" class="radio"><span>Premium</span></label>
+                                </div>
+                                <div>
+                                    <input
+                                        type="radio"
+                                        value="Gold"
+                                        id="radio_2"
+                                        name="package"
+                                    >
+                                    <label for="radio_2" class="radio"><span>Gold</span></label>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <label for="address_ceremony">Address (Ceremony)<span>*</span></label>
+                            <input id="address_ceremony" type="text" name="address_ceremony" required>
+                        </div>
+
+                        <div class="item">
+                            <label for="city_ceremony">City (Ceremony)<span>*</span></label>
+                            <input id="city_ceremony" type="text" name="city_ceremony" required>
+                        </div>
+                        <div class="item">
+                            <label for="state_ceremony">State (Ceremony)<span>*</span></label>
+                            <input id="state_ceremony" type="text" name="state_ceremony" required>
+                        </div>
+                        <div class="item">
+                            <label for="zip_ceremony">Zip (Ceremony)<span>*</span></label>
+                            <input id="zip_ceremony" type="text" name="zip_ceremony" required>
+                        </div>
+
+                        <div class="item">
+                            <div class="checkbox_item">
+                                <input type="checkbox" id="reception" name="reception">
+                                <label for="reception">Reception address same as ceremony?</label>
+                            </div>
+                            
+                        </div>
+
+                        <div class="item">
+                        </div>
+
+                        <div class="item_reception">
+                            <label for="address_reception">Address (Reception)<span>*</span></label>
+                            <input id="address_reception" type="text" name="address_reception" >
+                        </div>
+
+                        <div class="item_reception">
+                            <label for="city_reception">City (Reception)<span>*</span></label>
+                            <input id="city_reception" type="text" name="city_reception" >
+                        </div>
+                        <div class="item_reception">
+                            <label for="state_reception">State (Reception)<span>*</span></label>
+                            <input id="state_reception" type="text" name="state_reception" >
+                        </div>
+                        <div class="item_reception">
+                            <label for="zip_reception">Zip (Reception)<span>*</span></label>
+                            <input id="zip_reception" type="text" name="zip_reception" >
+                        </div>
+                        
+                    </div>
+                    </fieldset>
+                <div class="btn-block">
+                <button type="submit" id="submitButton">Submit</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>MelJen Films &copy; 2024 - Josh Seibert</p>
+            <a href="https://www.flaticon.com/free-icons/foto" title="foto icons">Foto icons created by Erifqi Zetiawan - Flaticon</a>
+            <div class="social">
+                <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+                <a href="https://www.instagram.com/meljenfilms/"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+                <a href="https://www.youtube.com/@MeljenFilms"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

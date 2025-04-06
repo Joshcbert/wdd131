@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Josh Seibert">
+    <meta name="description" content="Mock wedding videographer site for BYU Idaho course WDD 131">
+    <title>MelJen Films</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="main.js" type="module"></script>
+
+    <meta property="og:title" content="MelJen Films">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Imortalize your wedding day with MelJen Films as your videographer">
+    <meta property="og:image" content="https://joshcbert.github.io/wdd131/meljen_films/images/meljen_films_logo_color.png">
+    <meta property="og:url" content="https://joshcbert.github.io/wdd131/meljen_films/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:locale" content="en_US">
 </head>
 <body>
-    
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/meljen_films_logo_color.png" alt="MelJen Films Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a> 
+                <a href="packages.html">Packages</a>
+            </nav>
+        </header>
+
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/couple_rings.jpg" alt="couple holding hands rings focus">
+            </div>
+        </div>
+        
+        <main>
+            <section id="hero-msg">
+                <h1 class="home-title">Capture the Moment</h1>
+                <p>Keep the memories forever!</p>
+            </section>
+            <div class="cards-flex">
+                <section class="cards">
+                    <img class="icon" src="images/mic.png" alt="mic icon">
+                    <h2>Professional</h2>
+                </section>
+                <section class="cards">
+                    <img class="icon" src="images/clock.png" alt="clock icon">
+                    <h2>Timely</h2>
+                </section>
+                <section class="cards">
+                    <img class="icon" src="images/gimbal.png" alt="gimbal icon">
+                    <h2>Smooth</h2>
+                </section>
+            </div>
+            <section class="home-grid">
+                <div id="background"></div>
+                <img class="me" src="images/melissa.jpeg" alt="Melissa, the face behind MelJen Films">
+                <section class="msg">
+                    <h2>About Me</h2>
+                    <p>I’m a passionate videographer dedicated to capturing life’s most meaningful moments through film. With a keen eye for detail and a storytelling approach, I strive to create cinematic videos that evoke emotion and preserve memories for years to come. Whether it’s a wedding, event, or creative project, I bring professionalism, creativity, and a commitment to delivering high-quality visuals that reflect your unique story. Let’s bring your vision to life! </p>
+                </section>
+            </section>
+            
+        </main>
+
+        <footer>
+            <p>MelJen Films &copy; 2024 - Josh Seibert</p>
+            <a href="https://www.flaticon.com/free-icons/foto" title="foto icons">Foto icons created by Erifqi Zetiawan - Flaticon</a>
+            <div class="social">
+                <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+                <a href="https://www.instagram.com/meljenfilms/"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+                <a href="https://www.youtube.com/@MeljenFilms"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
